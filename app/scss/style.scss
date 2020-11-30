@@ -580,4 +580,37 @@
     }
 
 }
+// about page
+.terms{
+    padding-bottom: 100px;
+    &-inner__title{
+        // margin-bottom: 115px;
+    }
+    &-inner__item{
+        margin-bottom: 70px;
+    }
+    &-item__list{
+        @extend %rubik-400;
+        color:#243f4d;
+        padding-top: 30px;
+        padding-left: 15px !important;
+        font-size: 16px;
+        line-height: 30px;
+    }
+}
+.item__content+.item__content{
+    padding-top: 15px;
+}
+.item__text{
+    @extend %rubik-400;
+    color:#243f4d;
+    margin-bottom: 35px;
+}
+
+    
+
+
+
+
+
 @import 'media';

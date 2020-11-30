@@ -21,3 +21,64 @@ body{
 a{
     text-decoration: none;
 }
+.terms{
+    &-top{
+        padding: 33px 0;
+        background-color: #edf1f4;
+        margin-bottom: 100px;
+    }
+}
+.top-title{
+    @extend %rubik-400;
+    font-size: 36px;
+    line-height: 24px;
+    color:#222933;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    // padding: 33px 0;
+}
+.item-top__title{
+    font-size: 24px;
+    line-height: 40px;
+    color:#243f4d;
+    @extend %rubik-500;
+}
+.breadcrumbs{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    &::before{
+        content:"";
+        background-image: url(../images/icons/person-icon.png);
+        background-size: contain;
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        left: 0;
+        top: 4px;
+    }
+    &__list{
+    display: flex;
+    }
+    &__item{
+        color:#727272;
+        padding-right: 40px;
+        position: relative;
+        &::after{
+            position: absolute;
+            content:">>";
+            right: 15px;
+        }
+        &:last-child{
+            // color:$accent;
+            padding-right: 0;
+            &::after{
+                display:none;
+            }
+        }
+    }
+    &__link{
+        color:inherit;
+    }
+}

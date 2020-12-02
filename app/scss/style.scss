@@ -603,9 +603,116 @@
     color:#243f4d;
     margin-bottom: 35px;
 }
+//about
 
-    
+.about{
+    // color:$aboutAccent;
+    &__inner-info{
+        display:flex;
+    }
+    &__img-box{
+        height: 680px;
+        object-fit: contain;
+    }
+    &__inner-top{
+        border-bottom:1px solid #ebeef3;
+        margin-bottom: 40px;
+    }
+    &__inner-content{
+        color:$aboutAccent;
+        max-width:570px;
+        width:100%;
+        padding-left: 40px;
+    }
+    &__inner-statics{
+        padding-top: 100px;
+        display: flex;
+        margin-bottom:50px;
 
+    }
+    &__num{
+        font-size: 140px;
+        color:$button;
+        @extend %rubik-700;
+        display:block;
+    }
+    &__inner-subtitles{
+        margin-top:-20px;
+        padding-left: 30px;
+    }
+
+    &__inner-title{
+        margin-bottom: 40px;
+        @extend %dmsans-700;
+        font-size: 36px;
+    }
+    &__inner-text{
+        
+        margin-bottom: 55px;
+    }
+    &__inner-items{
+        display:flex;
+        justify-content: space-between;
+    }
+    &__inner-item{
+        align-items: flex-start;
+        display:flex;
+    }
+    &__item-img{
+        padding-top: 3px;
+    }
+    &__item-descr{
+        @extend %dmsans-700;
+        padding-left: 10px;
+        max-width:100px;
+    }
+    &__item-num{
+        display:block;
+        font-size: 36px;
+    }
+    &__item-name{
+        padding-top:10px;
+        display:block;
+        line-height: 17px;
+        color:#4C4C4C;
+    }
+}
+.workExperience{
+    background-color:#fcd7b6;
+    &__inner{
+        padding:85px 0 75px;
+    }
+    &__items{
+        display:flex;
+        justify-content: space-between;
+    }
+    &__item-image{
+        height: 70px;
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 20px;
+    }
+    &__item{
+        display:flex;    
+    }
+    &__item-image img{
+        margin: 0 auto;
+    }
+    &__info{
+        color:$aboutAccent;
+        text-align: center;
+        max-width: 200px;
+        @extend %dmsans-700;
+    }
+    &__num{
+        font-size: 36px;
+    }
+    &__descr{
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+}
 
 
 

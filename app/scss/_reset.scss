@@ -7,8 +7,11 @@ html{
     box-sizing: inherit;
     /*" inherit" is child of html */
 }
+// ul,
 ul[class],
-ol[class]{
+ol[class]
+// ol
+{
     padding: 0;
 }
 body,

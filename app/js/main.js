@@ -1,4 +1,29 @@
 $(function(){
+
+
+    $('.filter-price__input').ionRangeSlider({
+      type: "double",
+    //   prefix: "$",
+      onStart: function (data) {
+      $('.filter-price__from').text(data.from);
+      $('.filter-price__to').text(data.to);
+      },
+      onChange: function (data) {
+        $('.filter-price__from').text(data.from);
+        $('.filter-price__to').text(data.to);
+    },
+
+  });
+
+  $('.filter__recent-stars').rateYo({
+    rating: 3.2,
+    starWidth: "17px",
+    noramlFill:"#CCCCCE",
+    ratedFill:"#FFC35B",
+    readOnly:true,
+  });
+
+      
     $('.slider-inner__items').slick({
         dots:true,
         arrows:false,
@@ -15,5 +40,9 @@ $(function(){
             control:'.new-products-filter__link'
         }
     });
+
+
+
+
 });
 // products__items

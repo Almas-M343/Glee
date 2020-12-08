@@ -38,3 +38,10 @@ $aboutAccent:#243f4d;
     background-repeat: no-repeat;
     background-position: center;
 }
+%checkbox-hidden{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip:rect(0 0 0 0);
+    position:absolute;
+}

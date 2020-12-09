@@ -1,5 +1,29 @@
 $(function(){
+  $('.details-thumb').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    vertical:true,
+    arrows:false,
+  });
+      
+  $('.details-big').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows:false,
+  });
+      
+    $('.slider-inner__items').slick({
+        dots:true,
+        arrows:false,
+        fade:true,
+        autoplaySpeed:2000
+    });
 
+$('.related-products__inner').slick({
+        slidesToShow:4,
+        slidesToScroll:1,
+
+});
 
     $('.filter-price__input').ionRangeSlider({
       type: "double",
@@ -23,13 +47,8 @@ $(function(){
     readOnly:true,
   });
 
-      
-    $('.slider-inner__items').slick({
-        dots:true,
-        arrows:false,
-        fade:true,
-        autoplaySpeed:2000
-    });
+
+
     var mixer = mixitup('.products__items',{
         selectors:{
             control:'.products-filter__link'

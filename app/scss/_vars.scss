@@ -4,6 +4,7 @@ $footer:#7b7b7b;
 $link:#191919; 
 $button:#a3bbc8;  
 $aboutAccent:#243f4d;
+$productAcent:#333;
 // a3bbc8 
 // 243f4d
 %dmsans-700{
@@ -37,4 +38,11 @@ $aboutAccent:#243f4d;
 %img{
     background-repeat: no-repeat;
     background-position: center;
+}
+%checkbox-hidden{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip:rect(0 0 0 0);
+    position:absolute;
 }

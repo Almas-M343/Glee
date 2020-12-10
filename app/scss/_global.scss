@@ -1,55 +1,56 @@
-html,body{
-    height: 100%;    
+html,
+body {
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
-body{
+body {
     @extend %rubik-400;
-    color:$general;
+    color: $general;
     font-size: 16px;
     line-height: 30px;
 }
-.main{
+.main {
     flex-grow: 1;
 }
 
-.container{
+.container {
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
 }
-a{
+a {
     text-decoration: none;
 }
-.terms{
-    &-top{
+.terms {
+    &-top {
         padding: 33px 0;
         background-color: #edf1f4;
         margin-bottom: 100px;
     }
 }
-.top-title{
+.top-title {
     @extend %rubik-400;
     font-size: 36px;
     line-height: 24px;
-    color:#222933;
+    color: #222933;
     display: flex;
     justify-content: center;
     padding-bottom: 10px;
     // padding: 33px 0;
 }
-.item-top__title{
+.item-top__title {
     font-size: 24px;
     line-height: 40px;
-    color:#243f4d;
+    color: #243f4d;
     @extend %rubik-500;
 }
-.breadcrumbs{
+.breadcrumbs {
     display: flex;
     justify-content: center;
     position: relative;
-    &::before{
-        content:"";
+    &::before {
+        content: "";
         background-image: url(../images/icons/person-icon.png);
         background-size: contain;
         position: absolute;
@@ -58,145 +59,220 @@ a{
         left: 0;
         top: 4px;
     }
-    &__list{
-    display: flex;
+    &__list {
+        display: flex;
     }
-    &__item{
-        color:#727272;
+    &__item {
+        color: #727272;
         padding-right: 15px;
         position: relative;
-        &::after{
+        &::after {
             position: absolute;
-            content:"/";
+            content: "/";
             right: 5px;
         }
-        &:last-child{
+        &:last-child {
             // color:$accent;
             padding-right: 0;
-            &::after{
-                display:none;
+            &::after {
+                display: none;
             }
         }
     }
-    &__link{
-        color:inherit;
+    &__link {
+        color: inherit;
     }
 }
-.sponsors.sponsors-login{
-    padding-top:80px;
+.sponsors.sponsors-login {
+    padding-top: 80px;
 }
-.modal{
-    &-inner__form{
+.modal {
+    &-inner__form {
         font-size: 14px;
-        color:#436372;
-        max-width:480px;
-        width:100%;
+        color: #436372;
+        max-width: 480px;
+        width: 100%;
         margin: 105px auto 120px;
     }
-    &__form{
+    &__form {
         padding-bottom: 25px;
         margin-bottom: 25px;
-        border-bottom:1px solid #f6f6f6;
+        border-bottom: 1px solid #f6f6f6;
     }
-    &__form-item{
+    &__form-item {
         padding-bottom: 14px;
     }
-    &__form-input{
-        display:block;
+    &__form-input {
+        display: block;
         width: 100%;
         height: 60px;
         padding: 0 15px;
         margin-bottom: 35px;
-        border:1px solid #f6f6f6;
+        border: 1px solid #f6f6f6;
     }
-    &__btn{
-        border:none;
-        background-color:#a3bbc8;
-        color:#FFF;
-        display:block;
+    &__btn {
+        border: none;
+        background-color: #a3bbc8;
+        color: #fff;
+        display: block;
         width: 100%;
         padding: 15px 0;
         cursor: pointer;
         margin-bottom: 25px;
     }
     &__link,
-    &__help-pass{
+    &__help-pass {
         cursor: pointer;
-        font-size:14px;
-        color:#436372;
+        font-size: 14px;
+        color: #436372;
         display: flex;
         justify-content: space-between;
     }
-    &__new-account{
+    &__new-account {
         text-align: center;
         line-height: 24px;
         margin-bottom: 20px;
     }
-    &__btn-register{
+    &__btn-register {
         font-size: 18px;
-        color:#243f4d;
+        color: #243f4d;
         @extend %rubik-500;
-        background-color:white;
-        border:1px solid #436372;
+        background-color: white;
+        border: 1px solid #436372;
     }
+    //register 
+    &-top{
+        display:flex;
+        justify-content: center;
+        text-transform: uppercase;
+        
+    }
+    &-top__title{
+        &+.modal-top__title{
+            margin-left: 60px;
+        }
+    }
+    &__form-input--registr{
+        background-color: #f6f6f6;
+    }
+    &__text-register{
+        margin-bottom: 30px;
+    }
+    &__btn-register{
+        background-color: #000;
+        color:#FFF;
+        text-transform: uppercase;
+        margin-top: 20px;
+    }
+    &__form-register{
+        color:#8D8D8D;
+    }
+
 }
-.terms.terms-modal{
+.modal-inner__form.modal-inner__form-registr{
+    margin:50px auto 120px;
+
+}
+.terms.terms-modal {
     padding-bottom: 0;
 }
-.about-title{
+.about-title {
     @extend %dmsans-700;
     font-size: 36px;
 }
 
 // team
-.team{
+.team {
     padding-top: 125px;
-    &__inner{
+    &__inner {
         display: flex;
     }
-    &__title{
+    &__title {
         margin-bottom: 30px;
     }
-    &__descr{
+    &__descr {
         margin-bottom: 40px;
     }
-    &__content{
-        max-width:300px ;
+    &__content {
+        max-width: 300px;
         width: 100%;
         margin-right: 100px;
     }
-    &__items{
-        display:grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-gap:5px 30px;
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5px 30px;
     }
-    &__img-box{
+    &__img-box {
         width: 370px;
         height: 321px;
         object-fit: contain;
     }
-    &__item-about{
+    &__item-about {
         padding: 20px;
         padding-left: 30px;
-        transform:translateY(-55px);
+        transform: translateY(-55px);
         width: 324px;
         height: 110px;
-        background-color: #FFF;
-        display:flex;
+        background-color: #fff;
+        display: flex;
         justify-content: space-between;
         z-index: 4;
     }
-    &__links{
+    &__links {
         align-items: center;
-        display:flex;
+        display: flex;
     }
-    &__person-name{
+    &__person-name {
         font-size: 22px;
         line-height: 26px;
-        color:#436372;
+        color: #436372;
         @extend %dmsans-700;
     }
-    &__person-positon{
-        color:#565872;
+    &__person-positon {
+        color: #565872;
     }
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    &-container {
+        width: 900px;
+        margin-left: auto;
+    }
+    &__list {
+        display: flex;
+    }
+    &__item {
+        display: inline-flex;
+        &+.pagination__item {
+            margin-left: 20px;
+        }
+    }
+    &__link {
+        padding: 17px 25px;
+        border: 1px solid rgb(163, 187, 200);
+        color: $aboutAccent;
+    }
+    &__link--active {
+        background-color: rgb(163, 187, 200);
+        color: #fff;
+    }
+    &__arrow {
+        padding: 17px 25px;
+        border: 1px solid rgb(163, 187, 200);
+        margin-left: 20px;
+        color: $aboutAccent;
+    }
+}
+.pagination-container--list2{
+    margin-left: 80px;
+}
+.pagination-container--blog{
+    padding-bottom: 100px;
+    margin: 0;
+    padding-top: 100px;
+}
+.pagination-blog{
+    float:left;
 }

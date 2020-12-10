@@ -1,4 +1,15 @@
 $(function(){
+  var mixer = mixitup('.products__items',{
+    selectors:{
+        control:'.products-filter__link'
+    }
+});
+var mixerNew = mixitup('.new-product__items',{
+    selectors:{
+        control:'.new-products-filter__link'
+    }
+});
+
   $('.details-thumb').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -49,16 +60,6 @@ $('.related-products__inner').slick({
 
 
 
-    var mixer = mixitup('.products__items',{
-        selectors:{
-            control:'.products-filter__link'
-        }
-    });
-    var mixerNew = mixitup('.new-product__items',{
-        selectors:{
-            control:'.new-products-filter__link'
-        }
-    });
 
 
 
